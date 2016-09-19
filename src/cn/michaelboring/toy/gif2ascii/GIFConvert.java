@@ -12,7 +12,7 @@ public class GIFConvert {
 		GifDecoder decoder = new GifDecoder();
 		int status = decoder.read(srcFilePath);
 		if (status != 0) {
-			return -1;// srcfile not exist or open failed!
+			return -1;// source file not exist or open failed!
 		}
 		AnimatedGifEncoder e = new AnimatedGifEncoder();
 		boolean openStatus = e.start(disFilePath);
